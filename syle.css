@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/* 
+font-family: 'Big Shoulders Display', cursive; For Header
+font-family: 'Lexend Deca', sans-serif; For paragraph
+
+Bright orange: hsl(31, 77%, 52%)
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+*/
+
+/* Resetting the page */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #d3d3d3;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  border-radius: 15px;
+}
+
+/* Container layout */
+.container {
+  display: grid;
+  max-width: 90%;
+  margin: 30px auto;
+  border-radius: 15px;
+}
+
+.img {
+  padding-left: 40px;
+  margin-top: 30px;
+}
+
+/* Headers */
+.header {
+  color: white;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 30px 0;
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+
+/* Text styles */
+.text {
+  padding-left: 40px;
+  margin: 30px 0;
+}
+
+/* Sedan container styles */
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* SUVs container styles */
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+/* Luxury container styles */
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Buttons */
+.learn-more {
+  margin-left: 40px;
+  width: 30%;
+  height: 50px;
+  margin-bottom: 40px;
+  border: 1px solid white;
+  background-color: white;
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 400;
+  border-radius: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.orange {
+  color: hsl(31, 77%, 52%);
+}
+.cyan {
+  color: hsl(184, 100%, 22%);
+}
+.dark-cyan {
+  color: hsl(179, 100%, 13%);
+}
+
+.orange:hover {
+  color: white;
+  background-color: hsl(31, 77%, 52%);
+}
+.cyan:hover {
+  color: white;
+  background-color: hsl(184, 100%, 22%);
+}
+.dark-cyan:hover {
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    width: 70%;
+    margin: 180px auto;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .sedan {
+    display: grid;
+    row-gap: 30px;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .suv {
+    display: grid;
+    row-gap: 30px;
+    border-radius: 0;
+  }
+  .luxury {
+    display: grid;
+    row-gap: 30px;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .learn-more {
+    width: 45%;
+    margin-top: 50px;
+  }
+  .header {
+    margin-bottom: 0;
+  }
+  .text {
+    margin: 0;
+  }
+  .img {
+    margin-top: 50px;
+  }
+}
